@@ -8,7 +8,7 @@ venv\Scripts\activate        # Untuk Windows
 2. Install Mysql & MongoDB(mongosh) di komputer masing-masing
 
 3. Install Dependensi
-pip install -r requirements.txt
+pip install Flask pymysql flask-cors pymongo
 
 4. Setup Mysql
 mysql -u root -p -e "CREATE DATABASE projectSBD"

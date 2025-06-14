@@ -146,7 +146,7 @@ db.search_history.insertMany([
   {
     user_id: 4,
     searches: [
-      { keyword: "mie goreng", timestamp: ISODate("2025-06-08T09:45:00Z"), result_count: 6 }
+      { keyword: "mie goreng", timestamp: ISODate("2025-06-08T09:45:00Z"), result_count: 6 },
       { keyword: "katsu", timestamp: ISODate("2025-06-08T10:00:00Z"), result_count: 7 }
       
     ]
@@ -201,7 +201,7 @@ db.promotions.insertMany([
     discount_percent: 15,
     min_order_value: 20000,
     valid_until: ISODate("2025-11-30T23:59:59Z"),
-    applicable_restaurant_ids: [1, 5],
+    applicable_restaurant_ids: [1, 5]
   }
 ]);
 
