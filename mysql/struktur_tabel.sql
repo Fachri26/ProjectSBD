@@ -1,3 +1,13 @@
+REVOKE ALL PRIVILEGES ON projectSBD.* FROM 'root'@'localhost';
+
+-- admin
+CREATE USER 'adminuser'@'localhost' IDENTIFIED BY 'StrongPassword1!';
+GRANT SELECT, INSERT, UPDATE, CREATE, ALTER, INDEX ON mydatabase.* TO 'adminuser'@'localhost';
+
+-- backend
+CREATE USER 'backenduser'@'localhost' IDENTIFIED BY 'StrongPassword2!';
+GRANT SELECT, INSERT, UPDATE ON mydatabase.* TO 'backenduser'@'localhost';
+
 -- Table: users
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
